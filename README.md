@@ -94,6 +94,13 @@ blog_app_backend/
    ```
    python manage.py generate_dummy_data
    ```
+8. **Access the Admin Panel:**
+   - Go to http://127.0.0.1:8000/admin
+   
+   ### Log in with the superuser credentials created earlier.
+
+   - You can create new users, posts, and comments from the admin panel and
+   Assign roles to users by adding them to the groups.
 
 ## Additional Notes
 **Proxy Configuration for Frontend:**
