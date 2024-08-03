@@ -2,7 +2,7 @@
 from django.urls import path
 from .views import (
     UserRegistrationView,
-    PostCreateView, PostRetrieveView,
+    PostCreateView, PostRetrieveView, CommentListByPostView,
     CommentCreateView, CommentRetrieveView, UserLoginView
 )
 
@@ -19,4 +19,6 @@ urlpatterns = [
     # Comment Endpoints
     path('comments/', CommentCreateView.as_view(), name='comment-create'),
     path('comments/<int:pk>/', CommentRetrieveView.as_view(), name='comment-retrieve'),
+    path('posts/<int:post_id>/comments/', CommentListByPostView.as_view(), name='comments-by-post'),
+
 ]
