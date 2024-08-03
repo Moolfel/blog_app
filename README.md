@@ -103,8 +103,17 @@ blog_app_backend/
    Assign roles to users by adding them to the groups.
 
 ## Additional Notes
-**Proxy Configuration for Frontend:**
 
-proxy.conf.json is added in frontend project to configure the proxy settings for the frontend application.
+**- Environment Variables:**
+   Create a .env file in the root directory of the project and add the following environment variables:
 
-This setup was done intentionally to manage API calls and proxy settings for development purposes.
+   ```
+   POSTGRES_DB=""
+   POSTGRES_USER=""
+   POSTGRES_PASSWORD=""
+   POSTGRES_HOST=""
+   POSTGRES_PORT=""
+   SECRET_KEY=""
+   DEBUG="True"
+   ```
+   Replace the values with your own configuration.
